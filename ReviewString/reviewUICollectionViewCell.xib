@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumSquareRegular.ttf">
+            <string>NanumSquareR</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="reviewUICollectionViewCell" reuseIdentifier="reviewUICollectionViewCell" id="gTV-IL-0wX" customClass="reviewUICollectionViewCell" customModule="ReviewString" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="289"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="289"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-rl-XS9">
+                        <rect key="frame" x="0.0" y="0.0" width="193" height="257"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Coi-KO-9mG">
+                                <rect key="frame" x="0.0" y="0.0" width="193" height="257"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKQ-HI-Hyt">
+                                <rect key="frame" x="0.0" y="0.0" width="193" height="257"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="심사 거절" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKK-gJ-oro">
+                                        <rect key="frame" x="68" y="135" width="56.5" height="17.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumSquareR" family="NanumSquare" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Coi-KO-9mG" firstAttribute="leading" secondItem="6m2-rl-XS9" secondAttribute="leading" id="4Ee-kM-7Et"/>
+                            <constraint firstAttribute="trailing" secondItem="HKQ-HI-Hyt" secondAttribute="trailing" id="7qh-e9-xeg"/>
+                            <constraint firstItem="HKQ-HI-Hyt" firstAttribute="leading" secondItem="6m2-rl-XS9" secondAttribute="leading" id="88w-Ew-SM0"/>
+                            <constraint firstAttribute="bottom" secondItem="HKQ-HI-Hyt" secondAttribute="bottom" id="8if-bZ-2Vq"/>
+                            <constraint firstAttribute="bottom" secondItem="Coi-KO-9mG" secondAttribute="bottom" id="PvR-qE-4xr"/>
+                            <constraint firstAttribute="width" secondItem="6m2-rl-XS9" secondAttribute="height" multiplier="3:4" id="X9x-W4-aow"/>
+                            <constraint firstAttribute="trailing" secondItem="Coi-KO-9mG" secondAttribute="trailing" id="Y8d-C2-Mab"/>
+                            <constraint firstItem="HKQ-HI-Hyt" firstAttribute="top" secondItem="6m2-rl-XS9" secondAttribute="top" id="Z2n-jD-zsp"/>
+                            <constraint firstItem="Coi-KO-9mG" firstAttribute="top" secondItem="6m2-rl-XS9" secondAttribute="top" id="vcH-Ed-orW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6m2-rl-XS9" secondAttribute="trailing" id="AaP-8d-8pb"/>
+                <constraint firstItem="6m2-rl-XS9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mdp-Ny-zga"/>
+                <constraint firstItem="6m2-rl-XS9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZAp-Z8-au7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="193" height="289"/>
+            <connections>
+                <outlet property="image" destination="Coi-KO-9mG" id="tHM-j5-Ksv"/>
+                <outlet property="rejectView" destination="HKQ-HI-Hyt" id="XXp-Hg-DOM"/>
+            </connections>
+            <point key="canvasLocation" x="140.5" y="5.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
